@@ -2,6 +2,13 @@
 
 This project is a team-building application that allows users to create, compare, and understand team compositions using Generative AI. The app provides an intuitive UI to explore player stats, team-building strategies, and interactive comparisons.
 
+--> I have tried to build similar ui as D11 when we long press on a player all his stats dispalys in a graphical format...couldn't implement it due to time constraints
+
+
+--> Besides every player there should be a question mark sign which compares him with other players in the category and tells why he is tha best
+
+--> Tried to implement video using gen AI but it requires paid version of the AI and the other AIs were not that impressive....
+
 ## Features
 
 - **Long Press on Player for Stats**: Long pressing on a player's name (e.g., "H Classen") will open a modal with their recent stats.
