@@ -7,7 +7,7 @@ This project is a team-building application that allows users to create, compare
 
 --> Besides every player there should be a question mark sign which compares him with other players in the category and tells why he is tha best
 
---> Tried to implement video using gen AI but it requires paid version of the AI and the other AIs were not that impressive....
+--> Tried to implement video using gen AI but it requires paid version of synthesia AI and the other AIs were not that impressive....
 
 ## Features
 
