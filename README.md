@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# Team Builder App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a team-building application that allows users to create, compare, and understand team compositions using Generative AI. The app provides an intuitive UI to explore player stats, team-building strategies, and interactive comparisons.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Long Press on Player for Stats**: Long pressing on a player's name (e.g., "H Classen") will open a modal with their recent stats.
+- **Player Comparison Table**: Clicking on "Why?" will show a comparison table between selected and non-selected players.
+- **Generative AI Q&A**: Ask questions like "Why is this player in the team and not any other player?" to get AI-generated insights into team formation decisions.
 
-   ```bash
-   npm install
-   ```
+## Getting Started
 
-2. Start the app
+### Prerequisites
 
-   ```bash
-    npx expo start
-   ```
+Ensure you have **Node.js** and **npm** installed on your machine. You can download them from [https://nodejs.org/](https://nodejs.org/).
 
-In the output, you'll find options to open the app in a
+### Installation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-username/team-builder-app.git
+    cd team-builder-app
+    ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-## Get a fresh project
+### Running the App
 
-When you're ready, run:
+To start the development server, run:
 
 ```bash
-npm run reset-project
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+The app should now be running on `http://localhost:3000`.
+Once the server is running, open your browser and navigate to `http://localhost:3000` to see the app in action.
 
-## Learn more
+## Usage
 
-To learn more about developing your project with Expo, look at the following resources:
+1. **Long Press for Player Stats**
+   Long press on "H Classen" to view recent stats in a modal. This includes recent performance, ratings, and key stats.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+2. **"Why?" Button - Player Comparison Table**
+   Click on the "Why?" button to open a comparison table between selected and non-selected players. This table shows metrics such as performance score, strengths, weaknesses, and fit with the current team.
 
-## Join the community
+3. **Generative AI Q&A**
+   Use the Q&A feature to ask questions like, "Why is this player in the team and not another player?" to receive AI-generated insights based on player performance and team strategy.
 
-Join our community of developers creating universal apps.
+## Project Structure
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `/src`: Contains all source code files.
+- `/components`: Includes reusable components such as the player modal and comparison table.
+- `/utils`: Utility functions for data handling and AI integrations.
+- `/services`: API services for fetching player data and interacting with the Generative AI model.
+
+## Dependencies
+
+Key dependencies used in this project:
+
+- `React` - Frontend framework
+- `React Modal` - For displaying the player stats in a modal
+- `react-table` - For displaying the comparison table
+- `axios` - For making API calls to the Generative AI service
+- `OpenAI API` - To generate answers for team-related questions
+
+## Future Enhancements
+
+- Real-time player data updates
+- Enhanced visualizations for team stats and insights
+- Voice-assisted Generative AI explanations
+
+## Contributing
+
+Contributions are welcome! Please follow the steps below:
+
+1. Fork the project.
+2. Create a new feature branch (`git checkout -b feature/NewFeature`).
+3. Commit your changes (`git commit -m 'Add some NewFeature'`).
+4. Push to the branch (`git push origin feature/NewFeature`).
+5. Open a pull request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
